@@ -11,6 +11,7 @@
     <style>
         body {
             background-color: rgba(0, 0, 0, 0.267);
+            margin: 0;
         }
 
         .navbar {
@@ -56,16 +57,71 @@
         }
 
         .ilan {
-            background-color: rgb(119, 116, 116);
+            background-color: rgb(207, 206, 206);
             padding: 20px;
             margin: 20px;
             text-align: center;
+        }
+        .leftbar{
+            text-align: left;      
+            position: fixed;
+            top: 0;
+            left: 0;    
+            background-color: rgb(145, 141, 141);
+            height: 100vh;
+        }
+        .liste-ul {
+            list-style: none;
+
+        }
+        .liste .liste-ul a { 
+            color: black;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .is-ilanlari {
+            margin: 20px 125px 0px 20px;
         }
     </style>
 </head>
 
 <body>
+    <div class="leftbar">
+        <h2 class="is-ilanlari">İş Alanları</h2>
+        <div class="liste">
+            <ul class="liste-ul">
+                <li class="meslek">
+                    <a href="">
+                        <i class="fa-solid fa-receipt"></i>
+                        <p>Muhasebe</p>
+                    </a>
+                </li>
+                <li class="meslek">
+                    <a href="">
+                        <i class="fa-solid fa-print"></i>
+                        <p>Asistan</p>
+                    </a>
+                </li>
+                <li class="meslek">
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Mühendislik</p>
+                    </a>
+                </li>
+                <li class="meslek">
+                    <a href="">
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Lojistik</p>
+                    </a>
+                </li>
+            </ul>
+        </div>    
+    </div>
+
     <div class="navbar">
+
         <div class="arama">
             <i class="fa-solid fa-magnifying-glass arama-ikonu"></i>
             <input class="arama-inputu" type="text" />
@@ -85,8 +141,10 @@
 
         <div class="baslik">
             <h1>İş İlanı Uygulaması</h1>
-        </div>
+        </div>       
     </div>
+
+    
     <hr />
     <div class="ilan">
         <img src="https://www.ecebilisimcenter.com/images/it-support-image.jpg" height="200px" width="300px" />
