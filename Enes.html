@@ -1,130 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./Enes.css" />
-    <title>İş İlanı</title>
-</head>
+    <title>mesleğim.com</title>
+  </head>
 
-<body>
+  <body>
     <div class="leftbar">
-        <h2 class="is-ilanlari">İş Alanları</h2>
-        <div class="liste">
-            <ul class="liste-ul">
-                <li class="meslek">
-                    <a href="">
-                        <i class="fa-solid fa-receipt"></i>
-                        <p>Muhasebe</p>
-                    </a>
-                </li>
-                <li class="meslek">
-                    <a href="">
-                        <i class="fa-solid fa-print"></i>
-                        <p>Asistan</p>
-                    </a>
-                </li>
-                <li class="meslek">
-                    <a href="">
-                        <i class="fa-solid fa-gear"></i>
-                        <p>Mühendislik</p>
-                    </a>
-                </li>
-                <li class="meslek">
-                    <a href="">
-                        <i class="fa-solid fa-truck"></i>
-                        <p>Lojistik</p>
-                    </a>
-                </li>
-            </ul>
-        </div>    
+      <h2 class="is-ilanlari">İş Alanları</h2>
+      <div class="liste">
+        <ul class="liste-ul">
+          <li class="meslek" id="girisyapbutonu">
+            <a href="">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <p>Giriş Yap</p>
+            </a>
+          </li>
+
+          <li class="meslek" id="muhasebe_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-receipt"></i>
+              <p>Muhasebe</p>
+            </a>
+          </li>
+          <li class="meslek" id="guvenlik_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-shield"></i>
+              <p>Güvenlik</p>
+            </a>
+          </li>
+          <li class="meslek" id="muhendis_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-gear"></i>
+              <p>Mühendislik</p>
+            </a>
+          </li>
+          <li class="meslek" id="lojistik_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-truck"></i>
+              <p>Lojistik</p>
+            </a>
+          </li>
+          <li class="meslek" id="kimyavegida_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-flask-vial"></i>
+              <p>Kimya ve Gıda</p>
+            </a>
+          </li>
+          <li class="meslek" id="turizmveseyahat_liste_elemani">
+            <a href="">
+              <i class="fa-solid fa-earth-americas"></i>
+              <p>Turizm ve Seyahat</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="navbar">
+      <div class="arama">
+        <i class="fa-solid fa-magnifying-glass arama-ikonu"></i>
+        <input class="arama-inputu" type="text" placeholder="iş ilanı ara..." />
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="logo">
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-house"></i>
+      </div>
 
-        <div class="arama">
-            <i class="fa-solid fa-magnifying-glass arama-ikonu"></i>
-            <input class="arama-inputu" type="text" />
-        </div>
-        <div class="logo">
-            <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="logo">
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <div class="logo">
-            <i class="fa-solid fa-calendar-days"></i>
-        </div>
-        <div class="logo">
-            <i class="fa-solid fa-house"></i>
-        </div>
-
-        <div class="baslik">
-            <h1>İş İlanı Uygulaması</h1>
-        </div>       
+      <div class="baslik">
+        <h1>mesleğim.com</h1>
+      </div>
     </div>
 
-    
     <hr />
-    <div class="ilan">
-        <img src="https://www.ecebilisimcenter.com/images/it-support-image.jpg" height="200px" width="300px" />
 
-        <h2>IT Destek Elemanı</h2>
-        <strong>ABC Firması</strong>
-        <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
-        <ul>
-            <li>En az lise mezunu,</li>
-            <li>Erkek adaylar için askerlik görevini tamamlamış,</li>
-            <li>Ürün paketlemesinde görev alacak,</li>
-            <li>Disiplinli ve takım çalışmasına yatkın,</li>
-            <li>Aktif ve dinamik,</li>
-            <li>Ürün toplama ve ürün paketleme konusunda tecrübeli,</li>
-            <li>Stok takibi yapabilen,</li>
-            <li>Tercihen excel bilgisine sahip, ofis programlarını kullanmış.</li>
-        </ul>
-        <a href="">
-            <button class="basvuru-butonu">Başvuru Yap</button>
-        </a>
+    <div class="anasayfa">
+      <div class="ilankategori" id="default">
+        <h2>Öne Çıkan İlanlar</h2>
+      </div>
+      <div class="ilankategori" id="muhasebe">
+        <h2>Muhasebe İlanları</h2>
+      </div>
+      <div class="ilankategori" id="lojistik">
+        <h2>Lojistik İlanları</h2>
+      </div>
+      <div class="ilankategori" id="muhendis">
+        <h2>Mühendis İlanları</h2>
+      </div>
+      <div class="ilankategori" id="guvenlik">
+        <h2>Güvenlik İlanları</h2>
+      </div>
+      <div class="ilankategori" id="turizmveseyahat">
+        <h2>Turizm ve Seyahat İlanları</h2>
+      </div>
+      <div class="ilankategori" id="kimyavegida">
+        <h2>Kimya ve Gıda İlanları</h2>
+      </div>
     </div>
 
-    <div class="ilan">
-        <img src="https://isinolsun.com/blog/wp-content/uploads/2023/06/depo_elemani_nasil_olunur.jpg" height="200px"
-            width="300px" />
+    <div class="girisyap">
+      <h3>Oturum Aç - mesleğim.com</h3>
+      <div class="input" id="adsoyad">
+        <label>Ad Soyad</label>
+        <input type="text" placeholder="Ad Soyad" />
+      </div>
+      <div class="input" id="telefon">
+        <label>Telefon</label>
+        <input type="tel" placeholder="Telefon" />
+      </div>
+      <div class="input" id="eposta">
+        <label>E-posta</label>
+        <input type="email" placeholder="E-posta" />
+      </div>
+      <div class="input" id="sifre">
+        <label>Şifre</label>
+        <input type="password" placeholder="Şifre" />
+      </div>
+      <button class="girisyapformbutonu">Giriş Yap</button>
+    </div>
 
-        <h2>Paketleme Elemanı</h2>
-        <strong>EFG Firması</strong>
-        <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
-        <ul>
-            <li>En az lise mezunu,</li>
-            <li>Erkek adaylar için askerlik görevini tamamlamış,</li>
-            <li>Ürün paketlemesinde görev alacak,</li>
-            <li>Disiplinli ve takım çalışmasına yatkın,</li>
-            <li>Aktif ve dinamik,</li>
-            <li>Ürün toplama ve ürün paketleme konusunda tecrübeli,</li>
-            <li>Stok takibi yapabilen,</li>
-            <li>Tercihen excel bilgisine sahip, ofis programlarını kullanmış.</li>
-        </ul>
+    <div class="ilan muhendis_ilani">
+      <img
+        src="https://www.ecebilisimcenter.com/images/it-support-image.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>IT Destek Elemanı</h2>
+      <strong>ABC Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>En az lise mezunu,</li>
+        <li>Erkek adaylar için askerlik görevini tamamlamış,</li>
+        <li>Ürün paketlemesinde görev alacak,</li>
+        <li>Disiplinli ve takım çalışmasına yatkın,</li>
+        <li>Aktif ve dinamik,</li>
+        <li>Ürün toplama ve ürün paketleme konusunda tecrübeli,</li>
+        <li>Stok takibi yapabilen,</li>
+        <li>Tercihen excel bilgisine sahip, ofis programlarını kullanmış.</li>
+      </ul>
+      <a href="">
         <button class="basvuru-butonu">Başvuru Yap</button>
+      </a>
+    </div>
+
+    <div class="ilan lojistik_ilani">
+      <img
+        src="https://isinolsun.com/blog/wp-content/uploads/2023/06/depo_elemani_nasil_olunur.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Paketleme Elemanı</h2>
+      <strong>EFG Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>En az lise mezunu,</li>
+        <li>Erkek adaylar için askerlik görevini tamamlamış,</li>
+        <li>Ürün paketlemesinde görev alacak,</li>
+        <li>Disiplinli ve takım çalışmasına yatkın,</li>
+        <li>Aktif ve dinamik,</li>
+        <li>Ürün toplama ve ürün paketleme konusunda tecrübeli,</li>
+        <li>Stok takibi yapabilen,</li>
+        <li>Tercihen excel bilgisine sahip, ofis programlarını kullanmış.</li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan muhasebe_ilani">
+      <img
+        src="https://kagithanemtal.meb.k12.tr/meb_iys_dosyalar/34/13/221781/resimler/2020_09/k_06142346_muhasebe.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Muhasebe Finans Personeli</h2>
+      <strong>KLM Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>
+          Üniversitelerin İktisadi İdari Bilimler Fakültelerinin ilgili
+          bölümlerinden veya Ticaret Lisesi ilgili bölümlerinden mezun, ,
+        </li>
+        <li>Genel Muhasebe Konusunda en az 3 yıl tecrübe sahibi,</li>
+        <li>Muhasebe programlarını iyi düzeyde kullanabilen,</li>
+        <li>Microsoft Office programlarını iyi düzeyde kullanabilen,</li>
+        <li>Sorumluluk bilinci yüksek, öğrenme ve gelişmeye açık,</li>
+        <li>Ekip çalışmasında uyumlu ve iletişimi kuvvetli,</li>
+        <li>Yoğun çalışma temposuna uyum sağlayabilen,</li>
+        <li>İstanbul Anadolu Yakasında ikamet eden.</li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan guvenlik_ilani">
+      <img
+        src="https://static.wixstatic.com/media/b32eac_e6c8836780d247b19d0b6fde7a81a203~mv2.jpg/v1/fill/w_980,h_667,fp_0.57_0.17,q_90/b32eac_e6c8836780d247b19d0b6fde7a81a203~mv2.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Güvenlik Personeli</h2>
+      <strong>PRS Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>Güvenlik sektöründe deneyim,</li>
+        <li>Güvenlik sertifikasına sahip olmak,</li>
+        <li>İyi iletişim becerilerine sahip olmak,</li>
+        <li>Esnek çalışma saatlerine uyum sağlayabilmek,</li>
+        <li>Temel bilgisayar bilgisi,</li>
+        <li>Askerlik hizmetini tamamlamış olmak (erkek adaylar için),</li>
+        <li>Kurumun mülklerini ve varlıklarını korumak,</li>
+        <li>Güvenlik kameralarını izlemek ve raporlamak.</li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan kimyavegida_ilani">
+      <img
+        src="https://media.istockphoto.com/id/1387118000/tr/foto%C4%9Fraf/researcher-working-whit-fluids-in-flasks-in-the-chemical-laboratory.jpg?s=612x612&w=0&k=20&c=tC0urbrE9vVqft5uzBRyOwmj48hLv_Fv8PVk5484MO4="
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Kimya ve Gıda Sektörü</h2>
+      <strong>TUV Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>Üniversitelerin Kimya Mühendisliği bölümünden mezun,</li>
+        <li>Tercihen üretim yapan işletmelerde en az 2 yıl deneyimli,</li>
+        <li>İyi derecede yazılı ve sözlü İngilizce bilen,</li>
+        <li>Analitik düşünme ve problem çözme yeteneği gelişmiş,</li>
+        <li>Enerjik, takım çalışmasına yatkın, iletişim becerileri güçlü,</li>
+        <li>Bursa’da ikamet eden veya edebilecek,</li>
+        <li>
+          Proses Standart çalışma şartlarının belirlenmesi için gerekli deneme
+          çalışmalarının ve analizinin yapılması, veri toplanarak
+          değerlendirilmesi,
+        </li>
+        <li>
+          İş, makine verimliliği ve arızalarla ilgili gerekli etüt ve
+          incelemelerini yapılarak, değerlendirilmesi.
+        </li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan turizmveseyahat_ilani">
+      <img
+        src="https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY="
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Turizm ve Seyahat Personeli</h2>
+      <strong>TUV Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>
+          Üniversitelerin Turizm ve Otel İşletmeciliği ya da yabancı dil
+          bölümlerinden lisans veya ön lisans derecesine sahip olan,
+        </li>
+        <li>Dikkatli, çözüm odaklı,</li>
+        <li>İletişim yeteneği güçlü,</li>
+        <li>İleri seviyede İngilizce bilen,</li>
+        <li>
+          Yurt dışı ofisleri ile kurumsal yazışmaları İngilizce olarak
+          gerçekleştirecek,
+        </li>
+        <li>
+          Yurt dışı ofislerden gelen tur programlarının fiyatlandırmasını
+          yapacak,
+        </li>
+        <li>
+          Sorumlu olduğu pazara yönelik operasyonel işlemleri gerçekleştirecek,
+        </li>
+        <li>Tedarikçiler ile görüşerek rezervasyon işlemlerini yapacak.</li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan kimyavegida_ilani">
+      <img
+        src="https://tr.web.img2.acsta.net/r_1280_720/medias/nmedia/18/69/21/47/19057450.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Kimya ve Gıda Personeli</h2>
+      <strong>VYZ Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>
+          Polyester reçine üretimi yapmakta olan fabrikamız da tecrübeli
+          tecrübesiz reaksiyon takibi yapmak üzere üretimde ve labaratuvarda
+          görevlendirilmek üzere aşağıdaki vasıflara sahip elemanlar
+          aranmaktadır,
+        </li>
+        <li>
+          Meslek lisesi, kimya teknikeri,kimyager, kimya mühendislikleri
+          bölümlerinden mezun,
+        </li>
+        <li>Ekip çalışmasına yatkın,</li>
+        <li>Titiz ve dikkatli çalışan,</li>
+        <li>Sorumluluk sahibi,</li>
+        <li>İş Sağlığı ve Güvenliği Kurallarına riayet eden,</li>
+        <li>Erkek Adaylar için askerliğini yapmış,</li>
+        <li>
+          Gebze, Çayırova, Darıca bölgelerinde ikamet eden, Gerektiğinde mesaiye
+          kalabilecek.
+        </li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
+    </div>
+
+    <div class="ilan muhendis_ilani">
+      <img
+        src="https://istanbulbogazicienstitu.com/view/images/blog/onecikan/meslek-sayisal-elektrik-elektronik-muhendisi.jpg"
+        height="200px"
+        width="300px"
+      />
+
+      <h2>Elektrik Elektronik Mühendisi</h2>
+      <strong>OPR Firması</strong>
+      <p><i>GENEL NİTELİKLER VE İŞ TANIMI</i></p>
+      <ul>
+        <li>
+          Üniversitelerin Elektrik-Elektronik veya Elektrik Mühendisliği
+          bölümlerinden mezun,
+        </li>
+        <li>Elektrik Dağıtım sektöründe en az 2 yıl deneyim sahibi,</li>
+        <li>Elektrik Dağıtım Şebekesi teçhizat ve malzeme bilgisine sahip,</li>
+        <li>
+          MS Office Autocad ve b-PRO programlarını iyi düzeyde kullanabilen,
+        </li>
+        <li>
+          AG/YG, havai/yeraltı şehir şebekesi arıza-onarım-bakım süreçlerinde
+          deneyimli,
+        </li>
+        <li>Arıza, bakım, onarım süreçlerinde deneyim sahibi,</li>
+        <li>
+          Şebeke yatırım ve ihtiyaçlarına ait saha ve teknik analizler sonucu en
+          uygun çözümü sunabilecek,
+        </li>
+        <li>
+          Proje okumayı bilen, Şebeke ve ENH projelerinin hazırlanması ve
+          kontrol süreçlerine hâkim.
+        </li>
+      </ul>
+      <button class="basvuru-butonu">Başvuru Yap</button>
     </div>
 
     <div class="basvuru-formu">
-        <form class="form">
-            <label>Adınız: </label>
-            <input class="name-input" type="text" />
-            <label>Soyadınız: </label>
-            <input class="surname-input" type="text" />
-            <label>CV: </label>
-            <textarea class="cv-textarea"></textarea>
+      <form class="form">
+        <label>Adınız: </label>
+        <input class="name-input" type="text" />
+        <label>Soyadınız: </label>
+        <input class="surname-input" type="text" />
+        <label>CV: </label>
+        <textarea class="cv-textarea"></textarea>
 
-            <button class="basvuru-formu-buton" type="submit">Başvuru Gönder</button>
-        </form>
+        <button class="basvuru-formu-buton" type="submit">
+          Başvuru Gönder
+        </button>
+      </form>
     </div>
 
     <script src="Enes.js"></script>
-</body>
-
+  </body>
 </html>
