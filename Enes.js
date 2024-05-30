@@ -1,10 +1,12 @@
-const basvuru_butonu = document.getElementsByClassName("basvuru-butonu")[0];
+const basvuru_butonu = document.getElementsByClassName("basvuru-butonu");
 const basvuru_formu = document.getElementsByClassName("basvuru-formu")[0];
 const basvuru_formu_buton = document.getElementsByClassName(
   "basvuru-formu-buton"
 )[0];
 
-basvuru_butonu.addEventListener("click", (event) => basvuruYap(event));
+Array.from(basvuru_butonu).forEach((buton) => {
+  buton.addEventListener("click", (event) => basvuruYap(event));
+});
 
 function basvuruYap(event) {
   event.preventDefault(); //sayfanın yenilenmesini önler
@@ -157,3 +159,38 @@ function kimyaVeGidaIlanlari(event) {
   event.preventDefault();
   showCategory(kimyavegida_kategori, kimyavegida_ilani);
 }
+
+
+const arama_inputu = document.getElementsByClassName("arama-inputu")[0];
+let arananKelime = "";
+
+console.log(arama_inputu)
+
+arama_inputu.addEventListener("input", (event) => aramaYap(event))
+
+function aramaYap(event) {
+  arananKelime = event.target.value;
+  ilanFiltrele(arananKelime);
+}
+
+function ilanFiltrele(arananKelime) {
+  const allIlanlar = [
+    ...muhasebe_ilani,
+    ...lojistik_ilani,
+    ...muhendis_ilani,
+    ...guvenlik_ilani,
+    ...turizmveseyahat_ilani,
+    ...kimyavegida_ilani,
+  ];
+  allIlanlar.forEach((ilan) => {
+    if(!ilan.textContent.toLowerCase().includes(arananKelime.toLowerCase())) {
+      ilan.style.display = "none";
+    } else {
+      ilan.style.display = "block";
+    }
+  })
+}
+
+const userLogo = document.getElementsByClassName("userLogo")[0];
+
+userLogo.addEventListener("click", (event) => girisYap(event))
